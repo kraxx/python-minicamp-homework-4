@@ -1,0 +1,21 @@
+<head>
+  <link rel='stylesheet' href='/static/styles/styles.css' type='text/css'>
+
+</head>
+
+<h1 class='header'>Movies</h1>
+
+<form action='/movie' method='POST'>
+  <h2>Add a Movie</h2>
+  <input name='name' placeholder='Movie Title'/>
+  <input name='info' placeholder='Cool info!'/>
+  <input type='submit' value='Update database' /> <!--turns into a button-->
+</form>
+<form action="/search" method="GET">
+    <h2>Search for a Movie</h2>
+    <input type="text" name="searchName" placeholder="Search by Title" />
+    <input type="submit" value="Search"/>
+</form>
+
+
+<a id='movie-list' href='/movies'>Movies List</a>
